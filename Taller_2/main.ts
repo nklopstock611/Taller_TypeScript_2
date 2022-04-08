@@ -5,6 +5,7 @@ import { dataSeries } from './dataSeries.js';
 const seriesTbody: HTMLElement = document.getElementById('series')!;
 const seriesCardDiv: HTMLElement = document.getElementById('card-series')!;
 const avgSeasonNumber: HTMLElement = document.getElementById('avg-seasons')!;
+const linkCardSerie: HTMLElement = document.getElementById('link-card')!;
 
 renderCoursesInTable(dataSeries);
 
@@ -12,12 +13,16 @@ avgSeasonNumber.innerHTML = `${calculateAvgSeasonsNumber(dataSeries)}`;
 
 renderSerieCard(dataSeries);
 
+/*
+linkCardSerie.onclick = () => renderSerieCard()
+*/
+
 function renderCoursesInTable(series: Serie[]): void {
     console.log('Desplegando series');
     series.forEach((serie) => {
         let trElement = document.createElement("tr");
         trElement.innerHTML = `<td>${serie.id}</td>
-                                <td><a href="${serie.review}">${serie.name}</a></td>
+                                <td><a id='link-card'>${serie.name}</a></td>
                                 <td>${serie.channel}</td>
                                 <td>${serie.seasons}</td>`;
         seriesTbody.appendChild(trElement);
