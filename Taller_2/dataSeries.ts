@@ -1,4 +1,3 @@
-
 import { Serie } from './serie.js';
 
 export const dataSeries = [
