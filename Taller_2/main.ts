@@ -46,7 +46,7 @@ function calculateAvgSeasonsNumber(series: Serie[]): number {
 function renderSerieCard(serie: Serie): void {
     console.log('Desplegando tarjeta');
     let divElement = document.createElement("div");
-        divElement.innerHTML = `<img class='card-img-top' scr="${serie.image}" alt='Card image cap'>
+        divElement.innerHTML = `<img class='card-img-top' src="${serie.image}" alt='image-serie-${serie.name}'>
                                 <div class='card-body'>
                                     <h5 class='card-title'>${serie.name}</h5>
                                     <p class='card-text'>${serie.description}</p>

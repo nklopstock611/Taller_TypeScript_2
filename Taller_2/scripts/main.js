@@ -37,7 +37,7 @@ function calculateAvgSeasonsNumber(series) {
 function renderSerieCard(serie) {
     console.log('Desplegando tarjeta');
     var divElement = document.createElement("div");
-    divElement.innerHTML = "<img class='card-img-top' scr=\"".concat(serie.image, "\" alt='Card image cap'>\n                                <div class='card-body'>\n                                    <h5 class='card-title'>").concat(serie.name, "</h5>\n                                    <p class='card-text'>").concat(serie.description, "</p>\n                                    <a href=\"").concat(serie.review, "\">").concat(serie.review, "</a>\n                                </div>");
+    divElement.innerHTML = "<img class='card-img-top' src=\"".concat(serie.image, "\" alt='image-serie-").concat(serie.name, "'>\n                                <div class='card-body'>\n                                    <h5 class='card-title'>").concat(serie.name, "</h5>\n                                    <p class='card-text'>").concat(serie.description, "</p>\n                                    <a href=\"").concat(serie.review, "\">").concat(serie.review, "</a>\n                                </div>");
     seriesCardDiv.appendChild(divElement);
 }
 function clearSerieCard() {
