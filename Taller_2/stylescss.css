@@ -9,7 +9,7 @@
     position: relative;
     background: white;
     color: rgb(0, 87, 248);
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     border: none;
     outline: none;
     cursor: pointer; /* para que salga la manito */
@@ -34,4 +34,19 @@
     transform: scale(1, 0.5);
 }
 
+.btn-serie-name:active {
+    border-color: blue;
+}
+
+/* esto es para que no salga el borde
+   automático de Chrome en los botones.
+   Sinceramente, sería mejor dejarlo,
+   pero se ve medio feo jeje. */
+*:focus {
+    outline: 0 !important;
+    border: 2px solid;
+    border-color: rgb(0, 87, 248);
+    border-width: 3px;
+    border-radius: 15px;
+}
 
