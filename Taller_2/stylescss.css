@@ -40,8 +40,8 @@
 
 /* esto es para que no salga el borde
    automático de Chrome en los botones.
-   Sinceramente, sería mejor dejarlo,
-   pero se ve medio feo jeje. */
+   Sinceramente, es bastante útil para
+   saber si  */
 *:focus {
     outline: 0 !important;
     border: 2px solid;
